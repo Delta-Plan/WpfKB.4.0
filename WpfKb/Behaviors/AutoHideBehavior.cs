@@ -118,9 +118,9 @@ namespace WpfKb.Behaviors
             behavior.PingActivity();
         }
 
-        private static void OnIsShownPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void OnIsShownPropertyChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
         {
-            var behavior = (AutoHideBehavior) d;
+            var behavior = (AutoHideBehavior) dependencyObject;
             if ((bool)e.NewValue) behavior.Show();
             else behavior.Hide();
         }
