@@ -42,9 +42,9 @@ namespace WpfKb.Controls
             _keys.CollectionChanged += Keys_CollectionChanged;
         }
 
-        private static void OnAreAnimationsEnabledPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void OnAreAnimationsEnabledPropertyChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
         {
-            var keyboard = (UniformOnScreenKeyboard)d;
+            var keyboard = (UniformOnScreenKeyboard)dependencyObject;
             keyboard.Keys.ToList().ForEach(x => x.AreAnimationsEnabled = (bool)e.NewValue);
         }
 
