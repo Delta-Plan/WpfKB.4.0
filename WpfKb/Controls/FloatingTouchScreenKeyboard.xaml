@@ -64,7 +64,7 @@
             Padding="10"
             CornerRadius="0, 10, 10, 10"
             >
-            <Controls:OnScreenWebKeyboard
+            <Controls:OnScreenKeyboard
                 AreAnimationsEnabled="{Binding AreAnimationsEnabled}"
                 />
         </Border>
