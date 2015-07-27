@@ -17,8 +17,8 @@ namespace WpfKb.LogicalKeys
             {
                 if (value != _selectedIndex)
                 {
-                    _selectedIndex = value;
-                    SelectedKeyDisplay = KeyDisplays[value];
+	                _selectedIndex = value < KeyDisplays.Count ? value : (value % KeyDisplays.Count);
+					SelectedKeyDisplay = KeyDisplays[_selectedIndex];
                     DisplayName = SelectedKeyDisplay;
                     OnPropertyChanged("SelectedIndex");
                     OnPropertyChanged("SelectedKeyDisplay");

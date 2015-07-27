@@ -46,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\References\Blend\System.Windows.Interactivity.dll</HintPath>
@@ -73,7 +74,9 @@
     <Compile Include="Controls\FloatingTouchScreenKeyboard.xaml.cs">
       <DependentUpon>FloatingTouchScreenKeyboard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\LanguageIndexKeeper.cs" />
     <Compile Include="LogicalKeys\CaseSensitiveKey.cs" />
+    <Compile Include="LogicalKeys\ChangeLanguageKey.cs" />
     <Compile Include="LogicalKeys\ChordKey.cs" />
     <Compile Include="LogicalKeys\ILogicalKey.cs" />
     <Compile Include="LogicalKeys\InstantaneousModifierKey.cs" />
